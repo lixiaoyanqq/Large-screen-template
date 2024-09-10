@@ -1,0 +1,127 @@
+.container-right {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 9999;
+    width: 460px;
+    background: linear-gradient(180deg, rgba(0, 0, 1, 0.5) 0%, #091829 100%);
+    backdrop-filter: blur(4px);
+    height: 86.4%;
+    overflow: hidden;
+    .area-tab-box {
+        .area-menu {
+            display: flex;
+            .area-menu-item {
+                flex: 1;
+                height: 46px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url("@/assets/images/tabs/area-default-bg.png") 50% 50% / 100% 100% no-repeat;
+                .area-menu-item-cont {
+                    font-family: DINAlternate, DINAlternate;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: rgba(255, 255, 255, 0.7);
+                    line-height: 20px;
+                    font-style: normal;
+                    text-transform: none;
+                    cursor: pointer;
+                    font-weight: bolder;
+                }
+            }
+            .tabAction {
+                background: url("@/assets/images/tabs/area-active-bg.png") 50% 50% / 100% 100% no-repeat;
+            }
+        }
+    }
+    .area-list-box {
+        margin-top: 20px;
+        padding: 0 10px;
+        .area-list-tab-menu {
+            display: flex;
+            background: #4a4c4e;
+            .list-tab-item {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                .list-tab-item-cont {
+                    font-family: DINAlternate, DINAlternate;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 0.6);
+                    line-height: 20px;
+                    font-style: normal;
+                    text-transform: none;
+                    cursor: pointer;
+                    font-weight: bolder;
+                }
+                .listActionTab {
+                    color: #fff;
+                }
+            }
+        }
+        .area-list-wrapper {
+            .list-content {
+                color: #fff;
+                display: flex;
+                height: 36px;
+                width: 100%;
+                .list-image {
+                    width: 40px;
+                    height: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .list-image-bg {
+                        width: 20px;
+                        height: 20px;
+                        background: url("@/assets/images/tabs/list-left-icon.png") 50% 50% / 100% 100% no-repeat;
+                    }
+                }
+                .list-title {
+                    width: 120px;
+                    height: 36px;
+                    line-height: 36px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .list-progress-bar {
+                    flex: 1;
+                    height: 36px;
+                    // background: #ce5c5c;
+                    .progress-undertone {
+                        margin-top: 16px;
+                        height: 6px;
+                        background: #8e8989;
+                        border-radius: 4px;
+                        .progress-value {
+                            width: 120px;
+                            height: 6px;
+                            // background: linear-gradient(90deg, rgba(24, 197, 255, 0) 0%, reb(24, 197, 255) 100%);
+                            background: linear-gradient(90deg, rgba(24, 197, 255, 0) 0%, rgb(24, 197, 255) 100%);
+                            border-radius: 4px;
+                        }
+                        .progress-bg {
+                            position: relative;
+                            top: -12px;
+                            left: 110px;
+                            width: 20px;
+                            height: 20px;
+                            background: url("@/assets/images/tabs/list-progress-bg.png") 50% 50% / 100% 100% no-repeat;
+                        }
+                    }
+                }
+                .list-value {
+                    text-align: center;
+                    width: 60px;
+                    height: 36px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,372 @@
+.container-left {
+    height: 86.4%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 9999;
+    width: 460px;
+    background: linear-gradient(180deg, rgba(0, 0, 1, 0.5) 0%, #091829 100%);
+    backdrop-filter: blur(4px);
+    .text {
+        font-family: PangMenZhengDao;
+        font-size: 18px;
+        color: #ffffff;
+        line-height: 21px;
+        text-align: center;
+        font-style: normal;
+        div {
+            background: linear-gradient(to top, #ffffff, #caf9ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .file-info {
+        position: relative;
+        margin-top: 10px;
+        height: 114px;
+        background: linear-gradient(180deg, #0f3c67 0%, rgba(22, 67, 110, 0.29) 53%, rgba(29, 74, 116, 0) 100%);
+        border-radius: 8px 8px 0px 0px;
+        border: 2px solid;
+        border-image: linear-gradient(to bottom, rgba(97, 204, 255, 1), rgba(29, 70, 89, 0.93), rgba(8, 40, 58, 0));
+        border-image-slice: 1;
+        border-bottom: 0;
+        text-align: center;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 52px;
+            height: 3px;
+            background: #4fd3fe;
+        }
+        .left-text {
+            // width: calc((100% - 11px) / 2);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            .info-title {
+                font-family:
+                    PingFangSC,
+                    PingFang SC;
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.7);
+                line-height: 20px;
+                font-style: normal;
+                text-transform: none;
+            }
+            .info-value {
+                width: 100%;
+                font-family: DINAlternate, DINAlternate;
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 37px;
+                font-style: normal;
+                margin: 10px 0;
+            }
+            .info-unit {
+                margin-top: 5px;
+                font-family:
+                    PingFangSC,
+                    PingFang SC;
+                font-weight: 400;
+                font-size: 21px;
+                color: rgba(255, 255, 255, 0.49);
+                line-height: 18px;
+                font-style: normal;
+            }
+        }
+        .placeholder {
+            width: 1px;
+            height: 90px;
+            background: linear-gradient(180deg, rgba(79, 211, 254, 0) 0%, #4fd3fe 52%, rgba(216, 216, 216, 0) 100%);
+            opacity: 0.53;
+            margin: 0 5px;
+        }
+    }
+    // 底部
+    .scroll {
+        overflow: hidden;
+        height: 95%;
+        .item {
+            padding: 8px 12px;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(180deg, #182f4a 0%, #112034 100%);
+            margin-bottom: 5px;
+            .item-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left-title {
+                    display: flex;
+                    align-items: center;
+                }
+                img {
+                    width: 39px;
+                    height: 39px;
+                    margin-right: 10px;
+                }
+                .normal {
+                    font-family: PangMenZhengDao, PangMenZhengDao;
+                    font-weight: normal;
+                    font-size: 24px;
+                    color: #69ddff;
+                    line-height: 27px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    font-style: normal;
+                }
+                .middle {
+                    font-family: PangMenZhengDao, PangMenZhengDao;
+                    font-weight: normal;
+                    font-size: 24px;
+                    color: #f3b158;
+                    line-height: 27px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    font-style: normal;
+                }
+                .height {
+                    font-family: PangMenZhengDao, PangMenZhengDao;
+                    font-weight: normal;
+                    font-size: 24px;
+                    color: #dd5858;
+                    line-height: 27px;
+                    letter-spacing: 2px;
+                    text-align: left;
+                    font-style: normal;
+                }
+                .time {
+                    font-family:
+                        PingFangSC,
+                        PingFang SC;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #ffffff;
+                    line-height: 22px;
+                    text-align: right;
+                    font-style: normal;
+                }
+            }
+            .item-content {
+                font-family:
+                    PingFangSC,
+                    PingFang SC;
+                font-weight: 600;
+                font-size: 20px;
+                color: #ffffff;
+                line-height: 28px;
+                text-align: left;
+                font-style: normal;
+                margin-top: 4px;
+            }
+            .item-subscribe {
+                margin-top: 8px;
+                font-family:
+                    PingFangSC,
+                    PingFang SC;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.41);
+                line-height: 22px;
+                text-align: left;
+                font-style: normal;
+            }
+        }
+    }
+}
+.enforcement-elements {
+    .element-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .element-item {
+            height: 133px;
+            width: 114px;
+            margin-bottom: 10px;
+            position: relative;
+            background-image: linear-gradient(rgba(123, 187, 227, 0.2) 0%, rgba(24, 60, 95, 0.4) 100%);
+            background-position: initial;
+            background-repeat: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: initial;
+            border-radius: 10px;
+            opacity: 1;
+            .element-item-header {
+                height: 28px;
+                width: 114px;
+                position: relative;
+                background-image: linear-gradient(90deg, rgba(0, 76, 175, 0.4) 0%, rgba(0, 60, 139, 0.8) 100%);
+                background-position: initial;
+                background-repeat: initial;
+                background-attachment: initial;
+                background-origin: initial;
+                background-clip: initial;
+                background-color: initial;
+                border-radius: 10px 10px 0px 0px;
+                opacity: 1;
+                box-shadow: rgb(0, 21, 45) 2px 2px 6px 0px;
+                text-align: center;
+                line-height: 28px;
+            }
+            .element-item-body {
+                .body-bg-box {
+                    display: flex;
+                    width: 100%;
+                    height: 75px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .body-bg {
+                        width: 65px;
+                        height: 65px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: url("@/assets/images/icon/icon-bg.png") 50% 50% / 100% 100% no-repeat;
+                        img {
+                            width: 80%;
+                            height: 80%;
+                        }
+                    }
+                }
+            }
+            .element-item-footer {
+                width: 80%;
+                height: 28px;
+                background: rgba(22, 67, 110, 0.29);
+                margin: 0 auto;
+                text-align: center;
+                line-height: 28px;
+                border-radius: 6px;
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.enforcement-matters {
+    display: flex;
+    height: 100%;
+    .matters-left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .matters-right {
+        flex: 1;
+        .matters-item {
+            margin-top: 20px;
+        }
+    }
+    .matters-item {
+        display: flex;
+        .matters-item-left {
+            position: relative;
+            .matter-video {
+                width: 70px;
+                height: 75px;
+                position: relative; /* 确保视频覆盖在其他内容上 */
+                overflow: hidden; /* 确保视频不会超出设定的区域 */
+                mix-blend-mode: screen;
+                pointer-events: auto;
+                video {
+                    position: absolute; /* 绝对定位，可以自由控制位置 */
+                    top: 0;
+                    left: 0;
+                    width: 100%; /* 视频的宽度 */
+                    height: 100%; /* 视频的高度 */
+                    object-fit: fill; /* 视频会保持宽高比缩放，多余的部分会被裁剪 */
+                    transform: none;
+                }
+                .video-image1 {
+                    position: absolute;
+                    width: 44px;
+                    height: auto;
+                    left: 18px;
+                    top: 20px;
+                }
+                .video-image2 {
+                    position: absolute;
+                    width: 70px;
+                    bottom: 0;
+                    mix-blend-mode: normal;
+                    pointer-events: none;
+                    opacity: 1;
+                }
+                .video-image3 {
+                    position: absolute;
+                    width: 70px;
+                    animation: opacityAnimate 5s infinite alternate ease-in-out;
+                }
+                .video-image4 {
+                    position: absolute;
+                    width: 70px;
+                    bottom: 5px;
+                }
+                .video-image5 {
+                    position: absolute;
+                    width: 70px;
+                    bottom: 5px;
+                    animation: moveUp 5s infinite alternate ease-in-out;
+                }
+            }
+            .video-image6 {
+                position: absolute;
+                width: 70px;
+                bottom: -20px;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+            }
+        }
+        .matters-item-right {
+            .matters-item-title {
+                color: #fff;
+                padding: 20px 0 0 10px;
+                font-size: 18px;
+            }
+            .matters-item-value {
+                padding: 10px 0 0 10px;
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@keyframes moveUp {
+    from {
+        // transform: translateY(100%); /* 从下到当前位置 */
+        bottom: 5px;
+        opacity: 1;
+    }
+    to {
+        // transform: translateY(-100%); /* 从当前位置到上方100%的位置 */
+        bottom: 80%;
+        opacity: 0;
+    }
+}
+@keyframes opacityAnimate {
+    from {
+        // transform: translateY(100%); /* 从下到当前位置 */
+        opacity: 1;
+    }
+    to {
+        // transform: translateY(-100%); /* 从当前位置到上方100%的位置 */
+        opacity: 0;
+    }
+}

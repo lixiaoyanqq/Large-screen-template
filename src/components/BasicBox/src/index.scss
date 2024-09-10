@@ -1,0 +1,42 @@
+@import "@/styles/common.scss";
+.basic-box {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    .box-title {
+        width: 100%;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            font-family: PangMenZhengDao;
+            font-size: 20px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-align: left;
+            font-style: normal;
+            background: linear-gradient(to top, #ffffff, #caf9ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            // flex: 1;
+        }
+    }
+    .box-content {
+        color: #fff;
+        padding: 10px 20px;
+    }
+    .sub-title {
+        // flex: 1;
+        padding: 20px;
+        margin-bottom: 18px;
+    }
+    .box-footer {
+        height: 10px;
+        width: 100%;
+        background: url("@/assets/images/basic/box/basic-footer-bg.png") 50% 50% / 100% 100% no-repeat;
+    }
+}
