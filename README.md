@@ -1,5 +1,27 @@
-# Vue 3 + TypeScript + Vite
+<!--
+ * @Author: lixiaoyanqq lixy_9791@163.com
+ * @Date: 2024-09-04 15:15:24
+ * @LastEditors: lixiaoyanqq lixy_9791@163.com
+ * @LastEditTime: 2024-09-10 10:44:25
+ * @FilePath: /Large-screen-template/README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+# Large-screen-template
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> 数据大屏、数据可视化
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Build Setup
+
+```bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
