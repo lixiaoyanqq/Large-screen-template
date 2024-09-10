@@ -1,12 +1,20 @@
 {
-  "name": "data-screen",
+  "name": "Large-screen-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build:old": "run-p type-check build-only",
+    "build": "vite build ",
+    "build:tar": "vite build && tar -zcvf cockpit-web.tar.gz dist",
+    "build:dev": "vite build --mode test",
+    "build:test": "vite build --mode test",
+    "preview": "vite build && vite preview --port 4173",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "prepare": "husky install",
+    "lint:lint-staged": "lint-staged"
   },
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
